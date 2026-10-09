@@ -27,7 +27,6 @@
   opacity: 1;
 }
 
-/* تصویر پس‌زمینه */
 .mySwiper .slide-background {
   position: absolute;
   inset: 0;
@@ -40,7 +39,7 @@
   z-index: 0;
 }
 
-/* سایه روی تصویر */
+
 .mySwiper .swiper-slide::after {
   content: "";
   position: absolute;
@@ -55,7 +54,7 @@
   );
 }
 
-/* اطلاعات فیلم */
+
 .mySwiper .swiper-slide .left {
   position: absolute;
   z-index: 2;
@@ -74,7 +73,7 @@
   direction: rtl;
 }
 
-/* لوگوی فیلم */
+
 .mySwiper .swiper-slide .slide-logo {
   position: static;
   display: block;
@@ -84,7 +83,6 @@
   object-fit: contain;
 }
 
-/* عنوان فیلم */
 .mySwiper .swiper-slide .left h2 {
   margin: 0;
   padding: 0;
@@ -94,7 +92,6 @@
   line-height: 1.6;
 }
 
-/* دکمه اطلاعات */
 .mySwiper .swiper-slide .left .More {
   all: unset;
   display: inline-block;
@@ -113,7 +110,6 @@
   background: #ffc342;
 }
 
-/* دکمه‌های ناوبری */
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-button-prev {
   z-index: 5;
