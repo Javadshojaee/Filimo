@@ -1,53 +1,46 @@
+/* ظرف اصلی اسلایدر */
 .mySwiper {
   position: relative;
+  display: block;
   width: 100%;
-  height: clamp(450px, 65vw, 720px);
+  height: 650px;
+  max-height: 80vh;
+  min-height: 450px;
+  margin: 0 auto 30px;
   overflow: hidden;
   background: #111;
+  isolation: isolate;
   direction: ltr;
 }
 
-.mySwiper .swiper-wrapper {
-  width: 100%;
+.mySwiper > .swiper-wrapper {
   height: 100%;
+  width: 100%;
 }
 
-.mySwiper .swiper-slide {
+.mySwiper > .swiper-wrapper > .swiper-slide {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.7s ease;
-}
-
-.mySwiper .swiper-slide-active {
   opacity: 1;
 }
 
-.mySwiper .swiper-slide > img:first-child {
+/* تصویر پس‌زمینه */
+.mySwiper .slide-background {
   position: absolute;
   inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
+  max-width: none;
   object-fit: cover;
-  object-position: center 25%;
-  -webkit-mask-image: linear-gradient(
-    to top,
-    transparent 0%,
-    black 30%
-  );
-  mask-image: linear-gradient(
-    to top,
-    transparent 0%,
-    black 30%
-  );
+  object-position: center;
+  z-index: 0;
 }
 
+/* سایه روی تصویر */
 .mySwiper .swiper-slide::after {
   content: "";
   position: absolute;
@@ -56,37 +49,42 @@
   pointer-events: none;
   background: linear-gradient(
     to left,
-    rgba(0, 0, 0, 0.92) 0%,
-    rgba(0, 0, 0, 0.55) 32%,
-    transparent 75%
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.35) 45%,
+    transparent 80%
   );
 }
 
+/* اطلاعات فیلم */
 .mySwiper .swiper-slide .left {
   position: absolute;
   z-index: 2;
-  top: 50%;
   right: 7%;
   left: auto;
+  top: 50%;
+  bottom: auto;
   width: min(420px, 42%);
+  height: auto;
   transform: translateY(-35%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 18px;
   direction: rtl;
 }
 
-.mySwiper .swiper-slide .left img {
+/* لوگوی فیلم */
+.mySwiper .swiper-slide .slide-logo {
+  position: static;
   display: block;
-  width: min(180px, 55%);
+  width: 150px;
   height: auto;
-  max-height: 180px;
+  max-width: 100%;
   object-fit: contain;
-  -webkit-mask-image: none;
-  mask-image: none;
 }
 
+/* عنوان فیلم */
 .mySwiper .swiper-slide .left h2 {
   margin: 0;
   padding: 0;
@@ -94,15 +92,13 @@
   font-family: filimo, Tahoma, sans-serif;
   font-size: clamp(24px, 3vw, 42px);
   line-height: 1.6;
-  font-weight: 900;
 }
 
+/* دکمه اطلاعات */
 .mySwiper .swiper-slide .left .More {
   all: unset;
   display: inline-block;
-  max-width: 100%;
   padding: 12px 24px;
-  margin-top: 5px;
   border-radius: 8px;
   background: #fff;
   color: #111;
@@ -111,27 +107,23 @@
   font-weight: bold;
   line-height: 1.8;
   cursor: pointer;
-  box-sizing: border-box;
 }
 
 .mySwiper .swiper-slide .left .More:hover {
   background: #ffc342;
 }
 
+/* دکمه‌های ناوبری */
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-button-prev {
-  position: absolute;
-  top: auto;
-  bottom: 30px;
   z-index: 5;
+  top: auto;
+  bottom: 25px;
   width: 40px;
   height: 40px;
-  margin: 0;
-  border: 1px solid #666;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.75);
   color: #fff;
-  direction: ltr;
 }
 
 .mySwiper .swiper-button-next {
@@ -147,48 +139,40 @@
 .mySwiper .swiper-button-next::after,
 .mySwiper .swiper-button-prev::after {
   font-size: 16px;
-  font-weight: bold;
 }
 
+/* موبایل */
 @media (max-width: 768px) {
   .mySwiper {
     height: 560px;
-  }
-
-  .mySwiper .swiper-slide > img:first-child {
-    object-position: 60% center;
-  }
-
-  .mySwiper .swiper-slide::after {
-    background: linear-gradient(
-      to top,
-      #111 0%,
-      rgba(0, 0, 0, 0.85) 35%,
-      rgba(0, 0, 0, 0.1) 100%
-    );
+    max-height: none;
+    min-height: 0;
   }
 
   .mySwiper .swiper-slide .left {
     right: 22px;
     left: 22px;
-    top: auto;
     bottom: 85px;
+    top: auto;
     width: auto;
     transform: none;
     gap: 12px;
-  }
-
-  .mySwiper .swiper-slide .left img {
-    width: 110px;
-    max-height: 110px;
   }
 
   .mySwiper .swiper-slide .left h2 {
     font-size: 26px;
   }
 
-  .mySwiper .swiper-button-next,
-  .mySwiper .swiper-button-prev {
-    bottom: 20px;
+  .mySwiper .swiper-slide .slide-logo {
+    width: 110px;
+  }
+
+  .mySwiper .swiper-slide::after {
+    background: linear-gradient(
+      to top,
+      #111,
+      rgba(0, 0, 0, 0.55) 55%,
+      transparent
+    );
   }
 }
