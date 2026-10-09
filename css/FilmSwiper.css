@@ -1,0 +1,122 @@
+.swiperss {
+  position: relative;
+  width: 90%;
+  max-width: 1900px;
+  margin: 40px auto;
+  overflow: hidden;
+  padding: 29px 0;
+}
+
+.swiper-wrappers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.swiper-sli {
+  position: relative;
+  flex: 0 0 220px;
+  height: 280px;
+  border-radius: 10px;
+  background: #222;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: filimo;
+    opacity: 0;
+    transform: translateY(10px);
+    background-color: #07070799;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    z-index: 3;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+  &:hover::before {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  span {
+    position: relative;
+    bottom: 4px;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    color: #fff;
+    font-family: filimo;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.swiper-button-nexts,
+.swiper-button-prevs {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #575757;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.swiper-button-nexts {
+  right: 10px;
+}
+
+.swiper-button-prevs {
+  left: 10px;
+}
+
+.swiper-button-nexts::after,
+.swiper-button-prevs::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.swiper-button-nexts::after {
+  transform: rotate(45deg);
+}
+
+.swiper-button-prevs::after {
+  transform: rotate(-135deg);
+}
+
+@media (max-width: 600px) {
+  .swiper-sli {
+    flex-basis: 145px;
+    height: 290px;
+  }
+}

@@ -1,0 +1,78 @@
+div.container {
+  width: 500px;
+  height: 620px;
+  margin: 60px auto;
+  font-family: filimo;
+  .top {
+    width: inherit;
+    height: 20%;
+    gap: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 90px;
+      color: lightgray;
+    }
+    .film {
+      width: 40px;
+    }
+  }
+  h3 {
+    font-family: filimo;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .button {
+    width: inherit;
+    height: 60%;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    span {
+      font-family: filimo;
+    }
+    input {
+      width: 400px;
+      height: 50px;
+      border-radius: 5px;
+      margin: 40px 15px;
+      padding: 5px;
+      box-sizing: border-box;
+      outline: unset;
+      border: unset;
+      border: 2px solid rgb(107, 105, 105);
+      font-family: filimo;
+      &.active {
+        border: 2px solid red;
+        background-color: red;
+      }
+    }
+    .btn {
+      all: unset;
+      padding: 10px 160px;
+      box-sizing: border-box;
+      background-color: rgb(84, 167, 84);
+      cursor: pointer;
+      color: white;
+      font-family: filimo;
+      border-radius: 10px;
+    }
+    .Google {
+      all: unset;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      font-family: filimo;
+      border: 2px solid lightgray;
+      cursor: pointer;
+      margin-top: 50px;
+      border-radius: 6px;
+    }
+  }
+}

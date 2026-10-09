@@ -1,0 +1,126 @@
+div.filter {
+  width: 85%;
+  background-color: #272727;
+  margin: auto;
+  margin-top: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 60px;
+  padding: 20px;
+  box-sizing: border-box;
+  select {
+    width: 190px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #636262;
+    border: unset;
+    outline: unset;
+    font-family: filimo;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    option {
+      width: 150px;
+      background-color: #2b2b2b;
+      color: white;
+      &:hover {
+        background-color: lightgray;
+      }
+    }
+  }
+}
+.custom-container {
+  position: relative;
+  width: 200px;
+  font-family: filimo;
+}
+
+.select-box {
+  background-color: #222;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #636262;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.options-list {
+  width: 400px;
+  background-color: #444;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  border-radius: 10px;
+  justify-content: baseline;
+  z-index: 10;
+  padding: 5px 0;
+  .btnOne,.btntwo {
+    all: unset;
+    width: fit-content;
+    background-color: #302e2e;
+    cursor: pointer;
+    font-family: filimo;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+  }
+  .threechose {
+    color: white;
+    font-family: filimo;
+    display: block;
+    background-color: #2b2b2b88;
+    width: fit-content;
+    padding: 0px 10px;
+  }
+
+  lable {
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+}
+
+.show {
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.arrow {
+  font-size: 0.8rem;
+}
+
+.lableUses {
+  gap: 20px;
+  color: white;
+  margin-right: 40px;
+}
+
+.endFilter {
+  all: unset;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: filimo;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}

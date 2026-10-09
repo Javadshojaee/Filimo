@@ -1,0 +1,59 @@
+div.AtA {
+  width: 89%;
+  height: 200px;
+  background: linear-gradient(90deg, #173b24 0%, #2c8c4e 50%, #277a45 100%);
+  margin: 50px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  .RightAtA {
+    height: inherit;
+    display: flex;
+    gap: 5px;
+    img {
+      width: 100px;
+      height: 120px;
+    }
+}
+.betwin {
+    width: 40%;
+    font-family: filimo;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+    gap: 10px;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 40px;
+    }
+}
+  .LeftAtA {
+    width: 60%;
+    height: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: end;
+    .buyAndwatch {
+        all: unset;
+        background-color: #1cb561;
+        padding: 10px 50px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        font-family: filimo;
+        cursor: pointer;
+    }
+  }
+}

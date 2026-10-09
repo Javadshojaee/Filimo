@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.warpper{ 
+    width: 100%;
+}
+
+@font-face {
+    font-family: filimo;
+    src: url(../fonts/FilimoDemoVariableVF.92dc333ccbdc346ce298.woff2);
+}
+
+body {
+    background-color: #151515;
+}

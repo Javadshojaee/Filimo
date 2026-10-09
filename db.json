@@ -1,0 +1,575 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "href": "./index.html",
+      "title": "",
+      "src": "./images/hedearImage/header.svg"
+    },
+    {
+      "id": 2,
+      "href": "",
+      "title": "فیلم",
+      "src": null
+    },
+    {
+      "id": 3,
+      "href": "#",
+      "title": "سریال",
+      "src": null
+    },
+    {
+      "id": 4,
+      "href": "#",
+      "title": "ایرانی",
+      "src": null
+    },
+    {
+      "id": 5,
+      "href": "#",
+      "title": "خارجی",
+      "src": null
+    },
+    {
+      "id": 6,
+      "href": "#",
+      "title": "مجموعه ها",
+      "src": null
+    },
+    {
+      "id": 7,
+      "href": "#",
+      "title": "فیلمو مدرسه",
+      "src": null
+    },
+    {
+      "id": 8,
+      "href": "#",
+      "title": "کودک",
+      "src": null
+    },
+    {
+      "id": 9,
+      "href": "#",
+      "title": "جستجو",
+      "src": null
+    }
+  ],
+  "Buy": [
+    {
+      "id": 1,
+      "href": "#",
+      "title": "خرید"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "href": "./login.html",
+      "title": "ورود"
+    }
+  ],
+  "sliders": [
+    {
+      "id": 1,
+      "src": "./images/sliderImage/slider.webp",
+      "srcImage": "./images/sliderImage/cankle.webp",
+      "href": "#",
+      "title": "اتفاقی فراتر از انتظار",
+      "desctiption": "اصلاعات بیشتر"
+    },
+    {
+      "id": 2,
+      "src": "./images/sliderImage/sider3.webp",
+      "srcImage": "./images/sliderImage/roshi.webp",
+      "href": "#",
+      "title": "روایتی از پذیرش وتاب اواری",
+      "desctiption": "اصلاعات بیشتر"
+    },
+    {
+      "id": 3,
+      "src": "./images/sliderImage/slider1.webp",
+      "srcImage": "./images/sliderImage/shefroni.webp",
+      "href": "#",
+      "title": "چمدونت بستی قاشق چنگال یادت نره!",
+      "desctiption": "اصلاعات بیشتر"
+    },
+    {
+      "id": 4,
+      "src": "./images/sliderImage/slider2.webp",
+      "srcImage": "./images/sliderImage/badNam.webp",
+      "href": "#",
+      "title": "اختصاصی",
+      "desctiption": "اصلاعات بیشتر"
+    },
+    {
+      "id": 4,
+      "src": "./images/sliderImage/fun.webp",
+      "srcImage": "./images/sliderImage/funIcon.webp",
+      "href": "#",
+      "title": "ببین کی برگشته سر فوتبال..",
+      "desctiption": "اصلاعات بیشتر"
+    }
+  ],
+  "Text": [
+    {
+      "id": 1,
+      "text": "ویژه",
+      "desctiptionText": "مشاهده همه<"
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "src": "./images/sliderImage/slider.webp",
+      "title": "اختصاصی",
+      "text": "کنکل |‌ فصل ۱ قسمت7",
+      "time": "55دقیقه"
+    },
+    {
+      "id": 2,
+      "src": "./images/sliderImage/slider1.webp",
+      "title": "اختصاصی",
+      "text": "شفرونی-فصل۲ قسمت6:شب های مازنداران",
+      "time": "50دقیقه"
+    },
+    {
+      "id": 3,
+      "src": "./images/sliderImage/card1.webp",
+      "title": "اختصاصی",
+      "text": "فان ابوطالب-فصل ۱ قسمت۲",
+      "time": "37دقیقه"
+    },
+    {
+      "id": 4,
+      "src": "./images/sliderImage/slider2.webp",
+      "title": "اختصاصی",
+      "text": "بدنام فصل ۱ قسمت 25: نگاه کن",
+      "time": "55دقیقه"
+    },
+    {
+      "id": 5,
+      "src": "./images/sliderImage/card2.webp",
+      "title": "اختصاصی",
+      "text": "من یک مرد هستم",
+      "time": "30دقیقه"
+    },
+    {
+      "id": 6,
+      "src": "./images/sliderImage/card3.webp",
+      "title": "اختصاصی",
+      "text": "21روز:فصل پرو-فصل۱ قسمت4",
+      "time": "55دقیقه"
+    },
+    {
+      "id": 7,
+      "src": "./images/sliderImage/card4.webp",
+      "title": "اختصاصی",
+      "text": "قیام",
+      "time": "128دقیقه"
+    },
+
+    {
+      "id": 8,
+      "src": "./images/sliderImage/runner.webp",
+      "title": "اختصاصی",
+      "text": "دونده",
+      "time": "99دقیقه"
+    },
+    {
+      "id": 9,
+      "src": "./images/sliderImage/sider3.webp",
+      "title": "اختصاصی",
+      "text": "روشن| فصل ۱ قسمت ۵",
+      "time": "56دقیقه"
+    },
+    {
+      "id": 10,
+      "src": "./images/sliderImage/lanter.webp",
+      "title": "اختصاصی",
+      "text": "فانوس ها | قسمت ۱ فصل ۷",
+      "time": "110دقیقه"
+    }
+  ],
+  "post": [
+    {
+      "id": 1,
+      "srcImagess": "./images/posterImage/filimo.jpeg",
+      "Texts": "یک اشتراک تا ورود به دنیای تماشا",
+      "sapn": "تماشای فیلم ها سریال های اختصاصی و ریالیتی شوهای به روز - بدون محدودیت",
+      "TextBtn": "خرید اشتراک و تماشا",
+      "ImgaeLeft": "./images/posterImage/post.webp"
+    }
+  ],
+  "names": [
+    {
+      "id": 1,
+      "Matn": "کمدی پلاس",
+      "text": "مشاهده همه>"
+    }
+  ],
+  "New": [
+    {
+      "id": 1,
+      "Matn": "تازه ها",
+      "text": "مشاهده همه>"
+    }
+  ],
+  "FilmSwiper": [
+    {
+      "id": 1,
+      "dataTitle": "کمدی خانوادگی",
+      "srcImages": "./images/swiperImage/Image1.webp",
+      "spanText": "تایماز موتوری"
+    },
+    {
+      "id": 2,
+      "dataTitle": "اکشن و کمدی",
+      "srcImages": "./images/swiperImage/Image2.webp",
+      "spanText": "زندگی شیرین"
+    },
+    {
+      "id": 3,
+      "dataTitle": "ایران-1392",
+      "srcImages": "./images/swiperImage/Image3.webp",
+      "spanText": "شیر یا خط"
+    },
+    {
+      "id": 4,
+      "dataTitle": "کمدی",
+      "srcImages": "./images/swiperImage/Image8.webp",
+      "spanText": "پپرونی برای دیکتاتور"
+    },
+    {
+      "id": 5,
+      "dataTitle": "کمدی",
+      "srcImages": "./images/swiperImage/Image7.webp",
+      "spanText": "جزایر قناری"
+    },
+    {
+      "id": 6,
+      "dataTitle": "کمدی و عاشقانه",
+      "srcImages": "./images/swiperImage/Image6.webp",
+      "spanText": "پول پارتی"
+    },
+    {
+      "id": 7,
+      "dataTitle": "اکشن و کمدی",
+      "srcImages": "./images/swiperImage/Inage5.webp",
+      "spanText": "تمساح خونی"
+    },
+    {
+      "id": 8,
+      "dataTitle": "کمدی و خانوادگی",
+      "srcImages": "./images/swiperImage/Image9.webp",
+      "spanText": "طهران ۵۷"
+    },
+    {
+      "id": 9,
+      "dataTitle": "کمدی و درام",
+      "srcImages": "./images/swiperImage/Image10.webp",
+      "spanText": "مطرب"
+    }
+  ],
+  "NewSwiper": [
+    {
+      "id": 1,
+      "dataTitle": "اکشن و جنایی",
+      "srcImages": "./images/swiperImage/Image11.webp",
+      "spanText": "بازی آدم ربایی"
+    },
+    {
+      "id": 2,
+      "dataTitle": "جنایی و درام ",
+      "srcImages": "./images/swiperImage/Image12.webp",
+      "spanText": "ملکه قرمز"
+    },
+    {
+      "id": 3,
+      "dataTitle": "کمدی",
+      "srcImages": "./images/swiperImage/Image13.webp",
+      "spanText": "بردارها"
+    },
+    {
+      "id": 4,
+      "dataTitle": "اکشن و جنایی",
+      "srcImages": "./images/swiperImage/Image15.webp",
+      "spanText": "یورش"
+    },
+    {
+      "id": 5,
+      "dataTitle": "انمیشن و ماجراجویی",
+      "srcImages": "./images/swiperImage/Image16.webp",
+      "spanText": "شمال"
+    },
+    {
+      "id": 6,
+      "dataTitle": "هیجان امگیز",
+      "srcImages": "./images/swiperImage/Image17.webp",
+      "spanText": "گمشده در دره مرگ"
+    },
+    {
+      "id": 7,
+      "dataTitle": "درام و عاشقانه",
+      "srcImages": "./images/swiperImage/Image18.webp",
+      "spanText": "دکتر خوب"
+    },
+    {
+      "id": 8,
+      "dataTitle": "هیجان امگیز",
+      "srcImages": "./images/swiperImage/Image19.webp",
+      "spanText": "روفوس: مار دریایی که شنا"
+    },
+    {
+      "id": 9,
+      "dataTitle": "انمیشن و ماجراجویی",
+      "srcImages": "./images/swiperImage/Image20.webp",
+      "spanText": "مسابقه از پاریس تا اهرام"
+    },
+    {
+      "id": 10,
+      "dataTitle": "درام و عاشقانه",
+      "srcImages": "./images/swiperImage/Image21.webp",
+      "spanText": "عشقی غیر از عشق تو"
+    }
+  ],
+  "Hot": [
+    {
+      "id": 1,
+      "Matn": "داغ ترین ها",
+      "text": "مشاهده همه>"
+    }
+  ],
+  "HOTFilm": [
+    {
+      "id": 1,
+      "dataTitle": "انیمیشن ماجراجویی",
+      "srcImages": "./images/swiperImage/Image22.webp",
+      "spanText": "زوتوپیا"
+    },
+    {
+      "id": 2,
+      "dataTitle": "عاشقانه",
+      "srcImages": "./images/swiperImage/Image23.webp",
+      "spanText": "اشرف رویا"
+    },
+    {
+      "id": 3,
+      "dataTitle": "کمدی و ورزشی",
+      "srcImages": "./images/swiperImage/Image24.webp",
+      "spanText": "فان ابوطالب"
+    },
+    {
+      "id": 4,
+      "dataTitle": "کمدی و عاشقانه",
+      "srcImages": "./images/swiperImage/Image25.webp",
+      "spanText": "پول پارتی"
+    },
+    {
+      "id": 5,
+      "dataTitle": "درام و عاشقانه",
+      "srcImages": "./images/swiperImage/Image26.webp",
+      "spanText": "بدنام"
+    },
+    {
+      "id": 5,
+      "dataTitle": "خانوادگی",
+      "srcImages": "./images/swiperImage/Image27.webp",
+      "spanText": "کدو بلو"
+    },
+    {
+      "id": 6,
+      "dataTitle": "ریلیتی شو",
+      "srcImages": "./images/swiperImage/Image28.webp",
+      "spanText": "شفرونی"
+    },
+    {
+      "id": 7,
+      "dataTitle": "انمیشن و اکشن",
+      "srcImages": "./images/swiperImage/Image31.webp",
+      "spanText": "سگ های نگهبان : سینمایی"
+    },
+    {
+      "id": 8,
+      "dataTitle": "کمدی و درام",
+      "srcImages": "./images/swiperImage/Image29.webp",
+      "spanText": "هفتاد سی"
+    },
+    {
+      "id": 9,
+      "dataTitle": "انمیشن و اکشن",
+      "srcImages": "./images/swiperImage/Image30.webp",
+      "spanText": "سگ های نگهبان: فیلم بزرگ"
+    }
+  ],
+  "AtA": [
+    {
+      "id": 1,
+      "ImageSrec": "./images/posterImage/filimo.jpeg",
+      "H1s": "یک اشتراک سرگرمی بی‌‌‌‌‌پایان",
+      "ps": " محتواهای موردعلاقه‌ات را از هرکجا و روی دستگاه‌های مختلف تماشا کن.",
+      "OneLi": "محتواهای به‌روز و پرطرفدار",
+      "TwoLi": "مناسب همه سنین",
+      "threeLi": "پشتیبانی ۲۴/۷",
+      "btnWatch": "خرید اشتراک و تماشا"
+    }
+  ],
+  "Tvserios": [
+    {
+      "id": 1,
+      "Matn": "سریال های اختصاصی فیلیمو",
+      "text": "مشاهده همه>"
+    }
+  ],
+  "TvSwiper": [
+    {
+      "id": 1,
+      "dataTitle": "کلاغ فصل ۱ قسمت ۱",
+      "srcImages": "./images/ImagesFilms/Klagh.webp"
+    },
+    {
+      "id": 2,
+      "dataTitle": "محکوم فصل ۱ قسمت ۱",
+      "srcImages": "./images/ImagesFilms/mahkom.webp"
+    },
+    {
+      "id": 3,
+      "dataTitle": "حثیت گمشده فصل ۱ قسمت ۱",
+      "srcImages": "./images/ImagesFilms/hesiat.webp"
+    },
+    {
+      "id": 4,
+      "dataTitle": "ملکه گدایان فصل ۱ قسمت ۱",
+      "srcImages": "./images/ImagesFilms/malake.webp"
+    },
+    {
+      "id": 5,
+      "dataTitle": "زخم کاری فصل ۱ قسمت ۱",
+      "srcImages": "./images/ImagesFilms/zakhmkari.webp"
+    },
+    {
+      "id": 6,
+      "dataTitle": "خوب بد جلف فصل ۱ قسمت ۱",
+      "srcImages": "./images/ImagesFilms/goodandbad.webp"
+    },
+    {
+      "id": 7,
+      "dataTitle": "زخم کاری فصل ۱ قسمت ۱",
+      "srcImages": "./images/ImagesFilms/jeran.webp"
+    }
+  ],
+  "onlineFilmText": [
+    {
+      "id": 1,
+      "Matn": "اکران آنلاین فیلیمو",
+      "text": "مشاهده همه>"
+    }
+  ],
+  "OnlineFims": [
+    {
+      "id": 1,
+      "dataTitle": "ماجراجویی در جزیره جیمزباند",
+      "srcImages": "./images/ImagesFilms/JeamsBand.webp"
+    },
+    {
+      "id": 2,
+      "dataTitle": "رخ نیلو",
+      "srcImages": "./images/ImagesFilms/rokhNilo.webp"
+    },
+    {
+      "id": 3,
+      "dataTitle": "پپرنی برای دیکتاتور",
+      "srcImages": "./images/ImagesFilms/diktator.webp"
+    },
+    {
+      "id": 4,
+      "dataTitle": "دختر برقی",
+      "srcImages": "./images/ImagesFilms/girl.webp"
+    },
+    {
+      "id": 5,
+      "dataTitle": "کفایت مزاکرات",
+      "srcImages": "./images/ImagesFilms/mozakerat.webp"
+    },
+    {
+      "id": 6,
+      "dataTitle": "زن و بچه",
+      "srcImages": "./images/ImagesFilms/zna.webp"
+    }
+  ],
+  "ComedyText":[
+     {
+      "id": 1,
+      "Matn": "کمدی",
+      "text": "مشاهده همه>"
+    }
+  ],
+  "ComedyFImss":[
+    {
+      "id": 1,
+      "dataTitle": "کمدی خانوادگی",
+      "srcImages": "./images/ComedyImages/comedy1.webp",
+      "spanText": "طهران 57"
+    },
+    {
+      "id": 2,
+      "dataTitle": "انیمیشن کمدی",
+      "srcImages": "./images/ComedyImages/comedy2.webp",
+      "spanText": "باب اسفنجی"
+    },
+    {
+      "id": 3,
+      "dataTitle": "کمدی خانوادگی",
+      "srcImages": "./images/ComedyImages/comedy3.webp",
+      "spanText": "قسطنطنیه"
+    },
+    {
+      "id": 4,
+      "dataTitle": "کمدی و درام",
+      "srcImages": "./images/ComedyImages/comedy4.webp",
+      "spanText": "هفتاد سی"
+    },
+    {
+      "id": 5,
+      "dataTitle": "کمدی و اکشن",
+      "srcImages": "./images/ComedyImages/comedy5.webp",
+      "spanText": "مرد عینکی"
+    },
+    {
+      "id": 6,
+      "dataTitle": "کمدی و درام",
+      "srcImages": "./images/ComedyImages/comedy6.webp",
+      "spanText": "کفایت مزاکرات"
+    },
+    {
+      "id": 7,
+      "dataTitle": "اکشن و کمدی",
+      "srcImages": "./images/ComedyImages/comedy7.webp",
+      "spanText": "تمساح خونی"
+    },
+    {
+      "id": 8,
+      "dataTitle": "اکشن و خانوادگی",
+      "srcImages": "./images/ComedyImages/comedy8.webp",
+      "spanText": "تگزاس ۳"
+    },
+    {
+      "id": 9,
+      "dataTitle": "خانوادگی و کمدی",
+      "srcImages": "./images/ComedyImages/comedy9.webp",
+      "spanText": "نیو کمپ"
+    },
+    {
+      "id": 10,
+      "dataTitle": "انیمیشن و کمدی",
+      "srcImages": "./images/ComedyImages/comedy10.webp",
+      "spanText": "پت و مت"
+    },
+    {
+      "id": 11,
+      "dataTitle": "کمدی و خانوادگی",
+      "srcImages": "./images/ComedyImages/comedy11.webp",
+      "spanText": "جهزیه"
+    }
+  ]
+}

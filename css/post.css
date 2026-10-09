@@ -1,0 +1,72 @@
+.post {
+  width: 85%;
+  height: 250px;
+  background: linear-gradient(90deg, #173b24 0%, #2c8c4e 50%, #277a45 100%);
+  margin: 40px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  .rightPost {
+    width: 39%;
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    .postText {
+      h1,
+      span {
+        font-family: filimo;
+        color: white;
+      }
+    }
+    .BuyEshtrak {
+      all: unset;
+      height: fit-content;
+      width: fit-content;
+      background-color: rgb(68, 175, 68);
+      padding: 10px 70px;
+      box-sizing: border-box;
+      color: white;
+      font-family: filimo;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  .leftPost {
+    width: 60%;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    img {
+      width: 400px;
+      height: 210px;
+    }
+  }
+}
+div.names,
+div.New,
+div.Hot,
+div.TVseries,div.online,div.Comedy {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 19px;
+    font-family: filimo;
+    color: white;
+    font-weight: bold;
+  }
+  .Mores {
+    color: rgb(240, 186, 49);
+    font-size: 15px;
+    cursor: pointer;
+  }
+}

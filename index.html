@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماشای آنلاین فیلم و سریال</title>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/posterImage/filimo.jpeg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="warpper">
+      <!-- header -->
+      <header id="header">
+        <nav>
+          <ul></ul>
+          <div class="login" id="login"></div>
+        </nav>
+      </header>
+
+      <!-- swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="wrpper"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- spesial -->
+      <div class="Special" id="Special">
+        <div class="top" id="top"></div>
+        <div class="box" id="box"></div>
+      </div>
+
+      <button class="MoreVideos">مشاهد بیشتر</button>
+
+      <div class="filter">
+        <select name="movie" id="movie">
+          <option value="filmOrserial" disabled selected hidden>
+            فیلم و سریال
+          </option>
+          <option value="all">همه</option>
+          <option value="film">فیلم</option>
+          <option value="serial">سریال</option>
+        </select>
+        <select name="movie" id="movie">
+          <option value="filmOrserial" disabled selected hidden>
+            زبان فیلم:
+          </option>
+
+          <option value="all">همه</option>
+          <option value="fa">فارسی(دوبله)</option>
+          <option value="text">زیرنویس فارسی</option>
+          <option value="en">زیرنویس انگلیسی</option>
+          <option value="we">زبان اصلی</option>
+          <option value="ot">چند زبانه</option>
+        </select>
+        <select name="movie" id="movie">
+          <option value="filmOrserial" disabled selected hidden>
+            رده سنی:
+          </option>
+
+          <option value="all">همه</option>
+          <option value="fa">زیر ۳ سال</option>
+          <option value="text">تا ۶ سال</option>
+          <option value="en">تا ۱۲ سال</option>
+          <option value="we">تا ۱۵ سال</option>
+          <option value="ot">تا ۱۸ سال</option>
+        </select>
+
+        <div class="custom-container">
+          <div class="select-box" id="selectBox">
+            <span>کشور سازنده</span>
+            <span class="arrow">▼</span>
+          </div>
+
+          <div class="options-list" id="myOptions">
+            <span class="threechose">فقط سه کشور میتوانید انتخاب کنید!</span>
+            <label class="lableUses">
+              <input type="checkbox" value="iran" /> ایران</label
+            >
+            <label class="lableUses">
+              <input type="checkbox" value="usa" />آمریکا</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="japan" class="input" /> ژاپن</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> ترکیه</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              انگلیس</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> کره
+              جنوبی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              فرانسه</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              کانادا</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> هند</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> آلمان</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              اسپانیا</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> چین</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              ایتالیا</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> خارجی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> دیگر
+              کشورها</label
+            >
+          </div>
+        </div>
+
+        <div class="custom-container">
+          <div class="select-box" id="selectBoxx">
+            <span>ژانر:</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="options-list" id="myOptionss">
+            <span class="threechose">فقط سه گزینه میتوانید انتخاب کنید!</span>
+            <label class="lableUses">
+              <input type="checkbox" value="iran" /> اکشن</label
+            >
+            <label class="lableUses">
+              <input type="checkbox" value="usa" />کمدی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="japan" class="input" /> وحشت</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> جنایی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> علکی
+              نخیلی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> ریلیتی
+              شو</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> درام</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> تاک
+              شو</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              تاریخی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> هیجان
+              انگیز</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              موزیکال</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> گیم
+              شو</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              بیوگرافی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> مستند</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" /> جنگی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              ماجراجویی</label
+            >
+            <label class="lableUses"
+              ><input type="checkbox" value="turk" class="input" />
+              خانوادگی</label
+            >
+          </div>
+        </div>
+
+        <div class="custom-container">
+          <div class="select-box" id="selectBoxxs">
+            <span>ژانر:</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="options-list" id="myOptionsss">
+            <span class="threechose">سال 1914 تا 2026</span>
+            <div class="rights">
+              <button class="btnOne">شمسی</button>
+              <button class="btntwo">میلادی</button>
+            </div>
+            <input type="range" />
+          </div>
+        </div>
+
+        <button class="endFilter" id="FilterBtn">اعمال فیلتر</button>
+      </div>
+
+      <div class="post" id="post"></div>
+
+      <div class="names" id="names"></div>
+
+      <div class="swiperss">
+        <div class="swiper-wrappers" id="swiperContain"></div>
+        <div class="swiper-button-prevs"></div>
+        <div class="swiper-button-nexts"></div>
+      </div>
+
+      <div class="New" id="New"></div>
+      <div class="swiperss" id="swip">
+        <div class="swiper-wrappers" id="swipContain"></div>
+        <div class="swiper-button-prevs"></div>
+        <div class="swiper-button-nexts"></div>
+      </div>
+      <div class="Hot" id="Hot"></div>
+      <div class="swiperss" id="swiphot">
+        <div class="swiper-wrappers" id="HotSiper"></div>
+        <div class="swiper-button-prevs"></div>
+        <div class="swiper-button-nexts"></div>
+      </div>
+
+      <div class="AtA" id="AtA"></div>
+
+      <div class="TVseries" id="TVseries"></div>
+
+      <div class="swiperss" id="TVsWIP">
+        <div class="swiper-wrappers" id="TVsWIPER"></div>
+        <div class="swiper-button-prevs"></div>
+        <div class="swiper-button-nexts"></div>
+      </div>
+
+      <div class="online" id="online"></div>
+
+      <div class="swiperss" id="OnlineFilms">
+        <div class="swiper-wrappers" id="OnlineF"></div>
+        <div class="swiper-button-prevs"></div>
+        <div class="swiper-button-nexts"></div>
+      </div>
+
+      <div class="Comedy" id="Comedy"></div>
+      <div class="swiperss" id="swipcomedy">
+        <div class="swiper-wrappers" id="ComedySwiper"></div>
+        <div class="swiper-button-prevs"></div>
+        <div class="swiper-button-nexts"></div>
+      </div>
+
+      <footer>
+        <div class="RightMenu">
+          <ul>
+            <li>تماشا با تلویزیون</li>
+            <li>اپلیکیشن ها</li>
+            <li>تماس و پشتیبانی</li>
+            <li>فروشگاه</li>
+            <li>سایر لینک ها</li>
+          </ul>
+        </div>
+        <div class="LeftMenu">
+          <ul>
+            <li>شبکه های اجتماعی</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "fade",
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
+        updateOnImagesReady: true,
+        fadeEffect: { crossFade: true },
+        speed: 700,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: false,
+        resistance: true,
+        resistanceRatio: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".swiperss", {
+        wrapperClass: "swiper-wrappers",
+        slideClass: "swiper-sliess",
+        slideClass: "swiper-sli",
+
+        slidesPerView: "auto",
+        spaceBetween: 12,
+
+        navigation: {
+          prevEl: ".swiper-button-nexts",
+          nextEl: ".swiper-button-prevs",
+        },
+      });
+    </script>
+  </body>
+</html>

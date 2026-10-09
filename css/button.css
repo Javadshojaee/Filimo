@@ -1,0 +1,18 @@
+.MoreVideos {
+  all: unset;
+  padding: 10px 30px;
+  background-color: #2b2b2b;
+  cursor: pointer;
+  color: white;
+  font-family: filimo;
+  border-radius: 10px;
+  font-weight: bold;
+  position: relative;
+  right: 47%;
+  top: 460px;
+  transition: 500ms;
+  &:hover {
+    border: 2px solid white;
+    transition: 500ms;
+  }
+}
