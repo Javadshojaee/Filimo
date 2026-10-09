@@ -291,50 +291,45 @@
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
     <script>
-      const mainSwiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper", {
         effect: "fade",
-
-        fadeEffect: {
-          crossFade: true,
-        },
-
         observer: true,
         observeParents: true,
         observeSlideChildren: true,
-
+        updateOnImagesReady: true,
+        fadeEffect: { crossFade: true },
         speed: 700,
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: false,
-
+        spaceBetween: 30,
+        centeredSlides: true,
         autoplay: {
-          delay: 3500,
+          delay: 2500,
           disableOnInteraction: false,
-          pauseOnMouseEnter: true,
         },
-
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         loop: false,
-
         resistance: true,
         resistanceRatio: 0,
-
         navigation: {
-          nextEl: ".mySwiper .swiper-button-next",
-          prevEl: ".mySwiper .swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
     <script>
-      const smallSwiper = new Swiper(".swiperss", {
+      var swiper = new Swiper(".swiperss", {
         wrapperClass: "swiper-wrappers",
         slideClass: "swiper-sliess",
+        slideClass: "swiper-sli",
 
         slidesPerView: "auto",
         spaceBetween: 12,
 
         navigation: {
-          nextEl: ".swiperss .swiper-button-prevs",
-          prevEl: ".swiperss .swiper-button-nexts",
+          prevEl: ".swiper-button-nexts",
+          nextEl: ".swiper-button-prevs",
         },
       });
     </script>
