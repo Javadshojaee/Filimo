@@ -1,50 +1,99 @@
+const DB_URL =
+  "https://javadshojaee.github.io/FilimoProject/db.json";
+
+let mainSwiper = null;
+
 async function swiper() {
-  let sliders = "";
-
-  let data = await fetch(
-    "https://javadshojaee.github.io/FilimoProject/db.json"
-  );
-
-  let res = await data.json();
-
-  sliders = res.sliders?.map((slide) => {
-    return `<div class="swiper-slide">
-      <img src="${slide.src}" alt="image">
-    </div>`;
-  });
-
-  document
-    .querySelector(".swiper>#wrpper")
-    .insertAdjacentHTML("beforeend", sliders.join(" "));
+  await post();
 }
 
 async function post() {
-  let poster = "";
+  const wrapper = document.querySelector(".mySwiper #wrpper");
 
-  let data = await fetch(
-    "https://javadshojaee.github.io/FilimoProject/db.json"
-  );
+  if (!wrapper) {
+    console.error("اسلایدر یا #wrpper پیدا نشد!");
+    return;
+  }
 
-  let res = await data.json();
+  try {
+    const response = await fetch(DB_URL);
 
-  poster = res.sliders?.map((slide) => {
-    return `<div class="swiper-slide">
-      <img src="${slide.src}" alt="swiper">
+    if (!response.ok) {
+      throw new Error("خطا در دریافت db.json: " + response.status);
+    }
 
-      <div class="left">
-        <img src="${slide.srcImage}" alt="swiper">
-        <h2>${slide.title}</h2>
+    const res = await response.json();
+    const slides = res.sliders || [];
 
-        <button class="More" type="button">
-          ${slide.desctiption ?? "اطلاعات بیشتر"}
-        </button>
+    if (slides.length === 0) {
+      console.error("هیچ اسلایدی در res.sliders وجود ندارد.");
+      return;
+    }
+
+    wrapper.innerHTML = slides.map((slide) => `
+      <div class="swiper-slide">
+        <img
+          src="${slide.src}"
+          alt="${slide.title || "فیلم"}"
+        >
+
+        <div class="left">
+          ${slide.srcImage ? `
+            <img
+              src="${slide.srcImage}"
+              alt=""
+            >
+          ` : ""}
+
+          <h2>${slide.title || ""}</h2>
+
+          <button class="More" type="button">
+            ${slide.desctiption || "اطلاعات بیشتر"}
+          </button>
+        </div>
       </div>
-    </div>`;
-  });
+    `).join("");
 
-  document
-    .querySelector(".swiper>#wrpper")
-    .innerHTML = poster.join(" ");
+   
+    if (mainSwiper) {
+      mainSwiper.destroy(true, true);
+      mainSwiper = null;
+    }
+
+    mainSwiper = new Swiper(".mySwiper", {
+      effect: "fade",
+
+      fadeEffect: {
+        crossFade: true
+      },
+
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+      speed: 700,
+      initialSlide: 0,
+      loop: slides.length > 1,
+
+      autoplay: slides.length > 1 ? {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      } : false,
+
+      observer: true,
+      observeParents: true,
+
+      navigation: {
+        nextEl: ".mySwiper .swiper-button-next",
+        prevEl: ".mySwiper .swiper-button-prev"
+      }
+    });
+
+    console.log("تعداد اسلایدها:", slides.length);
+
+  } catch (error) {
+    console.error("خطای اسلایدر:", error);
+  }
 }
 
 export { swiper, post };
